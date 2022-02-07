@@ -8,8 +8,8 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/woong-s/mnemonic/mnemonicre"
-	"github.com/woong-s/mnemonic/utils"
+	"github.com/tetgo/mnemonic/mnemonicre"
+	"github.com/tetgo/mnemonic/utils"
 )
 
 var port string
