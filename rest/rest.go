@@ -8,8 +8,8 @@ import (
 	"strconv"
 
 	"github.com/gorilla/mux"
-	"github.com/tetgo/mnemonic/mnemonicre"
-	"github.com/tetgo/mnemonic/utils"
+	"github.com/woong-s/mnemoniv/mnemonicre"
+	"github.com/woong-s/mnemoniv/utils"
 )
 
 var port string
@@ -31,8 +31,8 @@ type urlDescription struct {
 }
 type Mnemonic struct {
 	Mnemonic   string `json:"mnemonic"`
-	PrivateKey []byte `json:"privateKey"`
-	PublicKey  []byte `json:"publicKey"`
+	PrivateKey string `json:"privateKey"`
+	PublicKey  string `json:"publicKey"`
 }
 
 func documentation(rw http.ResponseWriter, r *http.Request) {
@@ -45,7 +45,7 @@ func documentation(rw http.ResponseWriter, r *http.Request) {
 		{
 			URL:         url("/mnemonic"),
 			Method:      "POST",
-			Description: "make mnemonic, passphrase:string,entropy:string",
+			Description: "make mnemonic, entropyBit:string,passphrase:string",
 		},
 	}
 	json.NewEncoder(rw).Encode(data)

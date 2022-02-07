@@ -2,7 +2,7 @@ package utils
 
 import "log"
 
-func UtilsError(err error) {
+func HandleErr(err error) {
 	if err != nil {
 		log.Fatal(err)
 	}
