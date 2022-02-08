@@ -1,4 +1,4 @@
-## NewMnemonic
+## Wallet Maker (wm)
 
 This Repository is just that make mnemonic wallet in rest, html, just(command)
 
@@ -7,8 +7,7 @@ This Repository is just that make mnemonic wallet in rest, html, just(command)
 ## INSTALL
 
 ```bash
-
-
+go get install //github.com/tetgo/wm
 ```
 
 
@@ -40,3 +39,4 @@ Commands:
 
 ### CONTIBUTORS
 
+You can always help with this project, so welcome!
