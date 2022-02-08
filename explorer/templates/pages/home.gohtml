@@ -1,0 +1,29 @@
+{{define "home"}}
+    <!DOCTYPE html>
+    <html lang="en">
+        {{template "head"}}
+        <body>
+            {{template "header"}}
+            <main>
+                {{if .Success}}
+                    <h1> Your NewMnemonic </h1>
+                    <h2>  {{.Mnemonic}} </h2> 
+                    <h1> Private Key </h1>
+                    <h2> {{.PrivateKey}} </h2>
+                    <h1> PublicKey </h1>
+                    <h2> {{.PublicKey}} </h2>
+
+                {{else}}
+                    <form method="post">
+                        <label> Entropy Bit: ex)256</label> <br/> 
+                        <input type="text" name="entropyBit"><br />
+                        <label> passphrase:: </label>
+                        <input type="text" name="passphrase"><br /> 
+                        <input type="submit">
+                    </form>
+                {{end}}
+            </main>
+        {{template "footer"}}
+        </body>
+    </html>
+{{end}}

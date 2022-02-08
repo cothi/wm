@@ -2,29 +2,42 @@ package cli
 
 import (
 	"fmt"
+	"os"
 
+	"github.com/woong-s/mnemoniv/explorer"
+	"github.com/woong-s/mnemoniv/mnemonicre"
 	"github.com/woong-s/mnemoniv/rest"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 
 var (
-	Mode       = kingpin.Flag("mode", "set html, rest, make").Short('m').Required().String()
-	Passphrase = kingpin.Flag("passphrase", "set the port").Short('p').Int()
-	Ent        = kingpin.Flag("entropy", "set 256, 158").Short('e').Int()
-	Port       = kingpin.Flag("entBit", "set the port num").Default("6060").Int()
+	app      = kingpin.New("chat", "A command-line mnemonic application.")
+	serverIP = app.Flag("server", "Server address").Default("127.0.0.1").IP()
+
+	just  = app.Command("just", "Just make wallet")
+	hPass = just.Flag("justPassphrase", "set the port").Short('p').Required().String()
+	Ent   = just.Flag("entropy", "set 256, 158").Short('e').Required().Int()
+
+	html  = app.Command("html", "Start html")
+	hPort = html.Flag("entBit", "set the port num").Default("6060").Int()
+
+	srest = app.Command("rest", "Start rest")
+	rPort = srest.Flag("entBit", "set the port num").Default("6060").Int()
 )
 
 func Start() {
 
-	kingpin.Parse()
-	fmt.Println(*Mode, *Ent, *Port, *Passphrase)
-
-	switch *Mode {
+	switch kingpin.MustParse(app.Parse(os.Args[1:])) {
 	case "rest":
-		fmt.Printf("rest api start, port %d", *Port)
-		rest.Start(*Port)
-	case "html":
+		fmt.Printf("rest api start, port %d", *rPort)
+		rest.Start(*rPort)
 
-	case "make":
+	case "html":
+		explorer.Start(*hPort)
+
+	case "just":
+		mnemonicre.Create(*Ent, *hPass)
+
 	}
+
 }

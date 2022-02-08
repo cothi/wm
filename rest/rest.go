@@ -49,6 +49,7 @@ func documentation(rw http.ResponseWriter, r *http.Request) {
 		},
 	}
 	json.NewEncoder(rw).Encode(data)
+
 }
 
 func mnemonic(rw http.ResponseWriter, r *http.Request) {
