@@ -20,7 +20,7 @@ go get github.com/tetgo/wm
 ```
 
 
-## YOU CAN MAKE NewMnemonic
+## CLI
 
 ```bash
 usage: chat [<flags>] <command> [<args> ...]
