@@ -7,7 +7,7 @@ This Repository is just that make mnemonic wallet in rest, html, just(command)
 ## INSTALL
 
 ```bash
-go get install //github.com/tetgo/wm
+go get github.com/tetgo/wm
 ```
 
 

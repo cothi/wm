@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/woong-s/mnemoniv/explorer"
-	"github.com/woong-s/mnemoniv/mnemonicre"
-	"github.com/woong-s/mnemoniv/rest"
+	"github.com/tetgo/wm/explorer"
+	"github.com/tetgo/wm/mnemonicre"
+	"github.com/tetgo/wm/rest"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 

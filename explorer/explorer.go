@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/woong-s/mnemoniv/mnemonicre"
+	"github.com/tetgo/wm/mnemonicre"
 )
 
 type homeData struct {

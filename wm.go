@@ -1,8 +1,7 @@
 package main
 
-import "github.com/woong-s/mnemoniv/cli"
+import "github.com/tetgo/wm/cli"
 
 func main() {
 	cli.Start()
-
 }

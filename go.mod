@@ -1,4 +1,4 @@
-module github.com/woong-s/mnemoniv
+module github.com/tetgo/wm
 
 go 1.17
 
