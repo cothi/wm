@@ -2,6 +2,9 @@
 
 This Repository is just that make mnemonic wallet in rest, html, just(command)
 
+#### requirement
+
+you should install go 
 
 
 ## INSTALL
@@ -34,8 +37,36 @@ Commands:
 
   rest [<flags>]
     Start rest
+    
 
 ```
+
+### EXAMPLE
+
+```bash
+
+
+# install
+go get github.com/tetgo/wm
+
+# help check
+wm --help
+
+## html start, and you check html souce code and folder structure of html 
+
+# html start
+wm html 
+# html start with setting set port
+wm html --port=8000
+
+
+# rest start, 
+wm rest
+
+# rest start with setting port
+wm rest --port=8000
+```
+
 
 ### CONTIBUTORS
 
