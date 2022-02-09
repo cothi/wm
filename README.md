@@ -67,6 +67,11 @@ wm rest
 wm rest --port=8000
 ```
 
+#### example, GIF REST
+![restapi](https://blog.kakaocdn.net/dn/5Gr3x/btrsTck1Fvv/W11U3tFzqB6mveZ01dgrH1/img.gif)
+
+#### example, GIF HTML
+![html](https://blog.kakaocdn.net/dn/bj09gk/btrsVKhdFvg/2eSKE0JXJkaq7xGCgBDpT0/img.gif)
 
 ### CONTIBUTORS
 
