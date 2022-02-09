@@ -2,6 +2,12 @@
 
 This Repository is just that make mnemonic wallet in rest, html, just(command)
 
+[![Build Status](https://travis-ci.org/brianium/mnemonic.svg?branch=master)](https://github.com/tetgo/wm)
+[![Go Report Card](https://goreportcard.com/badge/github.com/brianium/mnemonic)](https://goreportcard.com/report/github.com/tetgo/wm)
+[![GoDoc](https://godoc.org/github.com/brianium/mnemonic?status.svg)](https://godoc.org/github.com/tetgo/wm)
+
+
+
 #### requirement
 
 you should install go 
