@@ -1,4 +1,4 @@
-## Wallet Maker (wm)
+# Wallet Maker (wm)
 
 This Repository is just that make mnemonic wallet in rest, html, just(command)
 
@@ -47,7 +47,7 @@ Commands:
 
 ```
 
-### EXAMPLE
+## EXAMPLE
 
 ```bash
 
@@ -79,6 +79,7 @@ wm rest --port=8000
 #### example, GIF HTML
 ![html](https://blog.kakaocdn.net/dn/bj09gk/btrsVKhdFvg/2eSKE0JXJkaq7xGCgBDpT0/img.gif)
 
-### CONTIBUTORS
+
+## CONTIBUTORS
 
 You can always help with this project, so welcome!
