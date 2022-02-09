@@ -19,10 +19,10 @@ var (
 	Ent   = just.Flag("entropy", "set 256, 158").Short('e').Required().Int()
 
 	html  = app.Command("html", "Start html")
-	hPort = html.Flag("entBit", "set the port num").Default("6060").Int()
+	hPort = html.Flag("port", "set the port num").Default("6060").Int()
 
 	srest = app.Command("rest", "Start rest")
-	rPort = srest.Flag("entBit", "set the port num").Default("6060").Int()
+	rPort = srest.Flag("port", "set the port num").Default("6060").Int()
 )
 
 func Start() {
